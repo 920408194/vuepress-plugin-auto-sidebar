@@ -5,9 +5,9 @@ sidebar: auto
 
 ## 介绍（Introduction）
 
-**vuepress-plugin-auto-sidebar** 是用于为 vuepress 自动~~生成侧边栏~~**分组**的插件。
+**vuepress-plugin-auto-sidebar** 是用于为 vuepress 自动~~生成侧边栏~~[分组](/questions.html#_1-它的作用是生成侧边栏吗？)的插件。
 
-如果你只是写一个简单介绍页，那没必要使用它，但如果你希望用 vuepress 记录很多的东西 -- [飞跃高山与大洋的鱼的笔记](https://docs.shanyuhai.top/)，那你可以试一试这个插件。
+如果你只是写一个简单介绍页，那没必要使用它，但如果你希望用 vuepress 记录很多的东西，例如：[飞跃高山与大洋的鱼的笔记](https://docs.shanyuhai.top/)，那你可以试一试这个插件。
 
 
 

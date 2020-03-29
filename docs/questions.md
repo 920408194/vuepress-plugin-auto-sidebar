@@ -50,5 +50,14 @@ sidebar: auto
    ## 二级标题
    ```
 
-   
+
+
+
+## 4. 目录、文件同级会存在什么问题？
+
+会导致多个同级的导航栏同时高亮（选中）：
+
+<img :src="$withBase('/assets/router-link-hightlight.png')" alt="同级问题">
+
+这是由于 vuepress 默认主题的 `@vuepress/theme-default/components/NavLink.vue` 的 `<RouterLink>` 缺乏 `exact`，可能之后它会解决这个问题？
 
