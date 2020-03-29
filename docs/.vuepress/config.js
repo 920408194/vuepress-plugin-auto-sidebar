@@ -1,17 +1,21 @@
+const moment = require('moment');
+
+moment.locale("zh-cn");
+
 module.exports = {
-  title: 'vuepress plugin auto sidebar',
+  title: 'vuepress 自动生成侧边栏',
   description: '帮助 vuepress 快速生成侧边栏的插件',
   base: "/vuepress-plugin-auto-sidebar/",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
   plugins: [
-    [
-      require("../../index.js"),
-      {
-
-      }
-    ]
+    [require("../../index.js"), {
+      titleMode: "titlecase",
+    }],
+    ["@vuepress/last-updated", {
+      transformer: (timestamp) => moment(timestamp).format('LLLL')
+    }]
   ],
   themeConfig: {
     lastUpdated: '上次更新',
