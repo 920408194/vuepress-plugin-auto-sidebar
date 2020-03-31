@@ -15,7 +15,10 @@ module.exports = {
     }],
     ["@vuepress/last-updated", {
       transformer: (timestamp) => moment(timestamp).format('LLLL')
-    }]
+    }],
+    ["@vuepress/google-analytics", {
+      ga: "UA-134613928-2"
+    }],
   ],
   themeConfig: {
     lastUpdated: '上次更新',
