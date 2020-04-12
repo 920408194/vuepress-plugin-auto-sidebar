@@ -31,3 +31,7 @@ module.exports = {
   }
 }
 ```
+
+::: danger 注意
+**注意请勿将 `plugins` 放在 `themeConfig` 中**，关于[如何使用插件](https://vuepress.vuejs.org/zh/plugin/using-a-plugin.html)。
+:::
